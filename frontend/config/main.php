@@ -37,19 +37,7 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'urlManager' => [
-            'baseUrl' => '/',
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-                '' => 'site/index',
-                'products' => 'products/index/',
-                'products/<slug:\w+>' => 'products/index',
-                'category/<slug:\w+>' => 'products/category',
-                'product/<id:\d>' => 'products/product',
-                '<action>' => 'site/<action>'
-            ],
-        ],
+        
 
     ],
     'params' => $params,
